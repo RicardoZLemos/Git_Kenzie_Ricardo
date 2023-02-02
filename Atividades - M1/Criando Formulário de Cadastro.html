@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <section>
+        <form>
+            <div>
+                <label for="nome">Nome</label>
+            </div>
+            
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." required>
+            
+            <p>
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                    <input type="text" name="email" id="email" placeholder="Digite seu email aqui..." required>
+            </p>
+            <p>
+                <div>
+                    <label for="descrição">Descrição</label>
+                </div>
+                    <textarea id="descrição" 
+                    name="descrição" 
+                    placeholder="Fale mais sobre você aqui..." 
+                    cols="24" 
+                    rows="6"
+                    ></textarea>
+            </p>
+            <p>
+                <div>
+                    <label for="módulo">Módulo</label>
+                </div>
+                    <select name="módulo" id="módulo" required>
+                        <option value="">
+                            Escolher módulo
+                        </option>
+                        <option value="móduloum">
+                            Módulo Um
+                        </option>
+                        <option value="módulodois">
+                            Módulo Dois
+                        </option>
+                        <option value="módulotrês">
+                            Módulo Três
+                        </option>
+                        <option value="móduloquatro">
+                            Módulo Quatro
+                        </option>
+                        <option value="módulocinco">
+                            Módulo Cinco
+                        </option>
+                        <option value="móduloseis">
+                            Módulo Seis
+                        </option>
+                    </select>
+            </p>
+            <p>
+                <div>
+                    <label for="senha">Senha</label>
+                </div>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha aqui..." required>
+            </p>
+            <p>
+                <div>
+                    <label for=confirmarsenha>Confirmar Senha</label>
+                </div>
+                <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="Digite novamente sua senha aqui..." required>
+            </p>
+            <p>
+                Deseja receber novidades por email?
+            </p>
+            <label for="sim">Sim</label>
+            <input type="radio" id="sim" required name="novidadesporemail" value="sim">
+            
+            <label for="não">Não</label>
+            <input type="radio" id="não" required name="novidadesporemail" value="não">
+
+            <p>
+                <button type="submit">Cadastrar</button>
+            </p>
+        </form>
+    </section>
+</body>
+</html>
